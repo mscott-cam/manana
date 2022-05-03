@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+pnpm lint
+pnpm make-pretty
+pnpm test:related
+git add
